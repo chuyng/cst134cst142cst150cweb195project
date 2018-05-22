@@ -69,65 +69,485 @@
     <div class="container">
         <h2>Now Playing</h2>
         <div class="row">
-            <div class="poster content col-lg-3 col-md-4 col-6">
-                <div class="card" style="width: 100%">
-                    <img class="card-img-top" src="images/lifeoftheparty.jpg" alt="Life of the Party">
-                    <div class="card-body">
-                        <h5 class="card-title">Life of the Party</h5>
-                        <p class="card-text">PG</p>
+
+
+
+            <!--Life of the Party-->
+            <div id="movie1" class="poster content col-lg-3 col-md-4 col-6">
+                <div class="team-box">
+                    <a href="javascript:void(0)" class="md-trigger" data-toggle="modal" data-target="#myModal1">
+                    <img src="images/lifeoftheparty.jpg" class="center-block img-responsive
+                    wp-post-image" alt="Life of the Party"  />
+                    <h2><span class="upper">Life of the Party</span>
+                        <span class="lower">PG</span></h2></a>
+                </div>
+
+                <div class="panel-group" id="accordion=movie1">
+                    <div class="panel panel-default">
+                        <a data-toggle="collapse" data-parent="#accordion-movie1" href="#collapse-movie1">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"> Movie Details </h4>
+                            </div>
+                        </a>
+                        <div id="collapse-movie1" class="panel-collapse collapse">
+                            <div class="panel-body">
+
+                                <p>Show Times</p>
+                                <p>Ratings</p>
+                                <p>Synopsis</p>
+                                
+                            </div>
+                            <a data-toggle="collapse" data-parent="#accordion-movie1" href="#collapse-movie1">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> Close </h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ACCORDIAN END -->
+
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title"></h4>
+                                <img class="modal-poster" src="images/lifeoftheparty.jpg" />
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <h5>Life of the Party</h5>
+                                <p>Show Times</p>
+                                <p>Ratings</p>
+                                <p>Synopsis</p>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="poster content col-lg-3 col-md-4 col-6">
-                <div class="card" style="width: 100%">
-                    <img class="card-img-top" src="images/supertroopers2.jpg" alt="Super Troopers 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Super Troopers 2</h5>
-                        <p class="card-text">14A</p>
+
+            <!--Super Troopers 2-->
+            <div id="movie2" class="poster content col-lg-3 col-md-4 col-6">
+                <div class="team-box">
+                    <a href="javascript:void(0)" class="md-trigger" data-toggle="modal" data-target="#myModal2">
+                    <img src="images/supertroopers2.jpg" class="center-block img-responsive
+                    wp-post-image" alt="Life of the Party"  />
+                    <h2><span class="upper">Super Troopers 2</span>
+                        <span class="lower">14A</span></h2></a>
+                </div>
+
+                <div class="panel-group" id="accordion=movie2">
+                    <div class="panel panel-default">
+                        <a data-toggle="collapse" data-parent="#accordion-movie2" href="#collapse-movie2">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"> Movie Details </h4>
+                            </div>
+                        </a>
+                        <div id="collapse-movie2" class="panel-collapse collapse">
+                            <div class="panel-body">
+
+                                <p>Show Times</p>
+                                <p>Ratings</p>
+                                <p>Synopsis</p>
+
+                            </div>
+                            <a data-toggle="collapse" data-parent="#accordion-movie1" href="#collapse-movie2">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> Close </h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ACCORDIAN END -->
+
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal2">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title"></h4>
+                                <img class="modal-poster" src="images/supertroopers2.jpg" />
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <h5>Super Troopers 2</h5>
+                                <p>Show Times</p>
+                                <p>Ratings</p>
+                                <p>Synopsis</p>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="poster content col-lg-3 col-md-4 col-6">
-                <div class="card" style="width: 100%">
-                    <img class="card-img-top" src="images/deadpool22.jpg" alt="Deadpool 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Deadpool 2</h5>
-                        <p class="card-text">18A</p>
+
+            <!--Deadpool 2-->
+            <div id="movie3" class="poster content col-lg-3 col-md-4 col-6">
+                <div class="team-box">
+                    <a href="javascript:void(0)" class="md-trigger" data-toggle="modal" data-target="#myModal3">
+                    <img src="images/deadpool23.jpg" class="center-block img-responsive
+                    wp-post-image" alt="Life of the Party"  />
+                    <h2><span class="upper">Deadpool 2</span>
+                        <span class="lower">18A</span></h2></a>
+                </div>
+
+                <div class="panel-group" id="accordion=movie3">
+                    <div class="panel panel-default">
+                        <a data-toggle="collapse" data-parent="#accordion-movie3" href="#collapse-movie3">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"> Movie Details </h4>
+                            </div>
+                        </a>
+                        <div id="collapse-movie3" class="panel-collapse collapse">
+                            <div class="panel-body">
+
+                                <p>Show Times</p>
+                                <p>Ratings</p>
+                                <p>Synopsis</p>
+
+                            </div>
+                            <a data-toggle="collapse" data-parent="#accordion-movie3" href="#collapse-movie3">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> Close </h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ACCORDIAN END -->
+
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal3">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title"></h4>
+                                <img class="modal-poster" src="images/deadpool22.jpg" />
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <h5>Deadpool 2</h5>
+                                <p>Show Times</p>
+                                <p>Ratings</p>
+                                <p>Synopsis</p>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="poster content col-lg-3 col-md-4 col-6">
-                <div class="card" style="width: 100%">
-                    <img class="card-img-top" src="images/inifinitywar.jpg" alt="Avengers Infinity War 3D">
-                    <div class="card-body">
-                        <h5 class="card-title">Avengers: Infinity War</h5>
-                        <p class="card-text">PG</p>
+
+            <!--Avengers:  Infinity War 3D-->
+            <div id="movie4" class="poster content col-lg-3 col-md-4 col-6">
+                <div class="team-box">
+                    <a href="javascript:void(0)" class="md-trigger" data-toggle="modal" data-target="#myModal4">
+                    <img src="images/inifinitywar.jpg" class="center-block img-responsive
+                    wp-post-image" alt="Life of the Party"  />
+                    <h2><span class="upper">Avengers: Infinity War 3D</span>
+                        <span class="lower">PG</span></h2></a>
+                </div>
+
+                <div class="panel-group" id="accordion=movie4">
+                    <div class="panel panel-default">
+                        <a data-toggle="collapse" data-parent="#accordion-movie4" href="#collapse-movie4">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"> Movie Details </h4>
+                            </div>
+                        </a>
+                        <div id="collapse-movie4" class="panel-collapse collapse">
+                            <div class="panel-body">
+
+                                <p>Show Times</p>
+                                <p>Ratings</p>
+                                <p>Synopsis</p>
+
+                            </div>
+                            <a data-toggle="collapse" data-parent="#accordion-movie4" href="#collapse-movie4">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> Close </h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ACCORDIAN END -->
+
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal4">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title"></h4>
+                                <img class="modal-poster" src="images/inifinitywar.jpg" />
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <h5>Avengers: Infinity War 3D</h5>
+                                <p>Show Times</p>
+                                <p>Ratings</p>
+                                <p>Synopsis</p>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="poster content col-lg-3 col-md-4 col-6">
-                <div class="card" style="width: 100%">
-                    <img class="card-img-top" src="images/oceans8.jpg" alt="Ocean's 8">
-                    <div class="card-body">
-                        <h5 class="card-title">Ocean's 8</h5>
-                        <p class="card-text">PG-13</p>
+
+            <!--Ocean's 8-->
+            <div id="movie5" class="poster content col-lg-3 col-md-4 col-6">
+                <div class="team-box">
+                    <a href="javascript:void(0)" class="md-trigger" data-toggle="modal" data-target="#myModal5">
+                    <img src="images/oceans8.jpg" class="center-block img-responsive
+                    wp-post-image" alt="Life of the Party"  />
+                    <h2><span class="upper">Ocean's 8</span>
+                        <span class="lower">PG-13</span></h2></a>
+                </div>
+
+                <div class="panel-group" id="accordion=movie5">
+                    <div class="panel panel-default">
+                        <a data-toggle="collapse" data-parent="#accordion-movie5" href="#collapse-movie5">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"> Movie Details </h4>
+                            </div>
+                        </a>
+                        <div id="collapse-movie5" class="panel-collapse collapse">
+                            <div class="panel-body">
+
+                                <p>Show Times</p>
+                                <p>Ratings</p>
+                                <p>Synopsis</p>
+
+                            </div>
+                            <a data-toggle="collapse" data-parent="#accordion-movie5" href="#collapse-movie5">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> Close </h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ACCORDIAN END -->
+
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal5">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title"></h4>
+                                <img class="modal-poster" src="images/oceans8.jpg" />
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <h5>Ocean's 8</h5>
+                                <p>Show Times</p>
+                                <p>Ratings</p>
+                                <p>Synopsis</p>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="poster content col-lg-3 col-md-4 col-6">
-                <div class="card" style="width: 100%">
-                    <img class="card-img-top" src="images/bookclub.jpg" alt="Book Club">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Club</h5>
-                        <p class="card-text">PG</p>
+
+            <!--Book club-->
+            <div id="movie6" class="poster content col-lg-3 col-md-4 col-6">
+                <div class="team-box">
+                    <a href="javascript:void(0)" class="md-trigger" data-toggle="modal" data-target="#myModal6">
+                    <img src="images/bookclub.jpg" class="center-block img-responsive
+                    wp-post-image" alt="Life of the Party"  />
+                    <h2><span class="upper">Book Club</span>
+                        <span class="lower">PG</span></h2></a>
+                </div>
+
+                <div class="panel-group" id="accordion=movie6">
+                    <div class="panel panel-default">
+                        <a data-toggle="collapse" data-parent="#accordion-movie6" href="#collapse-movie6">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"> Movie Details </h4>
+                            </div>
+                        </a>
+                        <div id="collapse-movie6" class="panel-collapse collapse">
+                            <div class="panel-body">
+
+                                <p>Show Times</p>
+                                <p>Ratings</p>
+                                <p>Synopsis</p>
+
+                            </div>
+                            <a data-toggle="collapse" data-parent="#accordion-movie6" href="#collapse-movie6">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> Close </h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ACCORDIAN END -->
+
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal6">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title"></h4>
+                                <img class="modal-poster" src="images/bookclub.jpg" />
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <h5>Book Club</h5>
+                                <p>Show Times</p>
+                                <p>Ratings</p>
+                                <p>Synopsis</p>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--<div class="poster content col-lg-3 col-md-4 col-6">-->
+                <!--<div class="card" style="width: 100%">-->
+                    <!--<img class="card-img-top" src="images/lifeoftheparty.jpg" alt="Life of the Party">-->
+                    <!--<div class="card-body">-->
+                        <!--<h5 class="card-title">Life of the Party</h5>-->
+                        <!--<p class="card-text">PG</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="poster content col-lg-3 col-md-4 col-6">-->
+                <!--<div class="card" style="width: 100%">-->
+                    <!--<img class="card-img-top" src="images/supertroopers2.jpg" alt="Super Troopers 2">-->
+                    <!--<div class="card-body">-->
+                        <!--<h5 class="card-title">Super Troopers 2</h5>-->
+                        <!--<p class="card-text">14A</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="poster content col-lg-3 col-md-4 col-6">-->
+                <!--<div class="card" style="width: 100%">-->
+                    <!--<img class="card-img-top" src="images/deadpool22.jpg" alt="Deadpool 2">-->
+                    <!--<div class="card-body">-->
+                        <!--<h5 class="card-title">Deadpool 2</h5>-->
+                        <!--<p class="card-text">18A</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="poster content col-lg-3 col-md-4 col-6">-->
+                <!--<div class="card" style="width: 100%">-->
+                    <!--<img class="card-img-top" src="images/inifinitywar.jpg" alt="Avengers Infinity War 3D">-->
+                    <!--<div class="card-body">-->
+                        <!--<h5 class="card-title">Avengers: Infinity War</h5>-->
+                        <!--<p class="card-text">PG</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="poster content col-lg-3 col-md-4 col-6">-->
+                <!--<div class="card" style="width: 100%">-->
+                    <!--<img class="card-img-top" src="images/oceans8.jpg" alt="Ocean's 8">-->
+                    <!--<div class="card-body">-->
+                        <!--<h5 class="card-title">Ocean's 8</h5>-->
+                        <!--<p class="card-text">PG-13</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="poster content col-lg-3 col-md-4 col-6">-->
+                <!--<div class="card" style="width: 100%">-->
+                    <!--<img class="card-img-top" src="images/bookclub.jpg" alt="Book Club">-->
+                    <!--<div class="card-body">-->
+                        <!--<h5 class="card-title">Book Club</h5>-->
+                        <!--<p class="card-text">PG</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
         </div>
 
     </div>
