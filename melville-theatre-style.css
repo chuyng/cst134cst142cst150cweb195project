@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+
+
+.jumbotron {
+    margin-bottom: 0;
+    /* TODO find sleek image */
+    background-image: url("images/titlebanner.png");
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+nav {
+    margin-bottom: 2em;
+}
+
+.poster {
+    margin-bottom: 2em;
+}
+
+footer {
+    padding: 1.5em 0;
+    background: #302a2b;
+    text-align: center;
+    color: #acacac;
+    font-family: "PT Sans Narrow", Helvetica, Arial, sans-serif;
+}
+
+@media (max-width:575px) {
+    .content {
+        order: 99;
+    }
+}

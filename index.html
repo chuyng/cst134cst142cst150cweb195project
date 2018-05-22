@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Melville Theatre, Saskatchewan</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="melville-theatre-style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+          crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="jumbotron text-right">
+        <h1>Melville Theatre</h1>
+    </div>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="now-playing.html">Now Playing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="prices.html">Prices</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Useful Links</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="content col-sm-8">
+                <h2>About Us</h2>
+                <p>The Melville Theatre is located in Saskatchewan's smallest city. Melville has a population of just
+                    under 5000 people. To learn more about Melville and Melville businesses, tourism, and community
+                    events, <a href="http://www.melville.ca">click here</a>.
+                </p>
+                <p>Melville Theatre is the only movie theatre in Melville, Saskatchewan, Canada. It opened on February
+                    10, 1995. The first movie played in the Melville Theatre was DUMB AND DUMBER starring Jim Carrey.
+                    The biggest show (by ticket sales) to date was TITANIC, which was played for a total of four weeks
+                    over three separate bookings. Titanic was originally shown on 35mm film on February 20-March 5 and
+                    April 24-30, 1998. It was shown again in digital 3D on April 20-26, 2012.
+                </p>
+                <p>The Melville Theatre is located at 223 Third Avenue West in Melville, Saskatchewan, Canada. Before
+                    it was renovated to be a movie theatre, the building was a paint and wallpaper store which carried
+                    on business in Melville for many years as City Paint. Melville had no movie theatre at all for a
+                    period of approximately 15 years before the Melville Theatre was established. The building that is
+                    now the Melville Theatre was vacant for about three years after City Paint closed its doors. Frank
+                    Cox purchased the building from its former owners in October 1994.
+                </p>
+                <p>There is one screen, 153 seats and two wheelchair spaces. Yes, the Melville Theatre is wheelchair
+                    accessible! There are generally one or two shows per night, seven nights per week, and Saturday and
+                    Sunday afternoon matinees when appropriate movies are available. To find out what's currently
+                    playing and what's coming to the Melville Theatre, <a href="now-playing.html">click here</a>.
+                </p>
+                <p>The Theatre is closed only two days per year, Christmas Eve and Christmas Day, December 24 and 25.
+                    Open all other days including holidays.</p>
+                <p>The Melville Theatre used industry standard 35mm film until March 31, 2011. The last movie played on
+                    35mm film was JUSTIN BIEBER: NEVER SAY NEVER. The theatre then closed for a period of one week (the
+                    only time it has been closed for an entire week since the day it originally opened) for the
+                    installation of new digital cinema equipment and a new surround sound system. It re-opened on April
+                    8, 2011 as the first digital cinema in the Parkland region. The first digital 3D movie played at
+                    the Melville Theatre was MARS NEEDS MOMS.
+                </p>
+                <p>The Melville Theatre is an independent movie theatre. It is not part of any chain, and is owned and
+                    operated by Frank Cox.
+                </p>
+            </div>
+
+            <div class="nowPlaying col-sm-4">
+                <h2>Now Playing</h2>
+                <div id="posterCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#posterCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#posterCarousel" data-slide-to="1"></li>
+                        <li data-target="#posterCarousel" data-slide-to="2"></li>
+                        <li data-target="#posterCarousel" data-slide-to="3"></li>
+                        <li data-target="#posterCarousel" data-slide-to="4"></li>
+                        <li data-target="#posterCarousel" data-slide-to="5"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <a href="now-playing.html"><div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/lifeoftheparty.jpg" alt="Life of the Party">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="images/supertroopers2.jpg" alt="Super Troopers 2">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="images/deadpool21.jpg" alt="Deadpool 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/inifinitywar.jpg" alt="Avengers Infinity War 3D">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="images/oceans8.jpg" alt="Ocean's 8">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="images/bookclub.jpg" alt="Book Club">
+                        </div>
+                    </div></a>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#posterCarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#posterCarousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <span id="footerAddress">223 Third Avenue West  Melville SK</span>
+    </footer>
+
+</body>
+</html>
