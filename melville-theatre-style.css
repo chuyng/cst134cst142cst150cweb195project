@@ -30,6 +30,7 @@ footer {
     text-align: center;
     color: #acacac;
     font-family: "PT Sans Narrow", Helvetica, Arial, sans-serif;
+    margin-top: 2em;
 }
 
 @media (max-width:575px) {
