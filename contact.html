@@ -70,52 +70,57 @@
 
     <div class="container">
         <div class="row">
-            <div class="content col-12 col-md-8">
-                <h2>Contact Us</h2>
+            <h2>Contact Us</h2>
 
-                <p><strong>Address:</strong><br/>223 third Avenue West <br/> Melville, SK <br/> S0A 2P0</p>
-                <p><strong>Phone:</strong> (306)-728-4448</p>
-                <p><strong>Email:</strong> theatre@melvilletheatre.com</p>
+            <div class="row">
 
+                <div class="content col-12 col-md-8">
 
-                <div id="googleMap" style="height:400px;width:100%;"></div>
-                <script>
-                    function myMap() {
-                        var myCenter = new google.maps.LatLng(50.929133,-102.809333);
-                        var mapProp = {center:myCenter, zoom:17, scrollwheel:true, draggable:true, mapTypeId:google.maps.MapTypeId.ROADMAP};
-                        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-                        var marker = new google.maps.Marker({position:myCenter});
-                    }
-                </script>
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqOaS1mRnH2OqqtwV1fzwFFZeto1_trnc&callback=myMap"></script>
-
-            </div>
-
-            <div class="col-12 col-md-4 contactForm">
-
-                <p>If you have any questions or comments please fill out this form and we will get back to you as soon
-                    as we can.</p>
+                    <p><strong>Address:</strong><br/>223 third Avenue West <br/> Melville, SK <br/> S0A 2P0</p>
+                    <p><strong>Phone:</strong> (306)-728-4448</p>
+                    <p><strong>Email:</strong> theatre@melvilletheatre.com</p>
 
 
-                <form action="#">
-                    <div class="form-group">
-                        <label for="email">Name:</label>
-                        <input type="text" class="form-control" id="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email address:</label>
-                        <input type="email" class="form-control" id="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="pwd">Phone:</label>
-                        <input type="text" class="form-control" id="pwd">
-                    </div>
-                    <div class="form-group">
-                        <label for="Notes">Notes:</label>
-                        <textarea class="form-control" rows="3" id="Notes" name="Notes"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+                    <div id="googleMap" style="height:400px;width:100%;"></div>
+                    <script>
+                        function myMap() {
+                            var myCenter = new google.maps.LatLng(50.929133,-102.809333);
+                            var mapProp = {center:myCenter, zoom:17, scrollwheel:true, draggable:true, mapTypeId:google.maps.MapTypeId.ROADMAP};
+                            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                            var marker = new google.maps.Marker({position:myCenter});
+                        }
+                    </script>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqOaS1mRnH2OqqtwV1fzwFFZeto1_trnc&callback=myMap"></script>
+
+                </div>
+
+                <div class="col-12 col-md-4 contactForm">
+
+                    <p>If you have any questions or comments please fill out this form and we will get back to you as soon
+                        as we can.</p>
+
+
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="email">Name:</label>
+                            <input type="text" class="form-control" id="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Phone:</label>
+                            <input type="text" class="form-control" id="pwd">
+                        </div>
+                        <div class="form-group">
+                            <label for="Notes">Notes:</label>
+                            <textarea class="form-control" rows="3" id="Notes" name="Notes"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
             </div>
 
         </div>
