@@ -17,6 +17,7 @@ img {
 }
 
 nav {
+    margin-top: 0;
     margin-bottom: 2em;
 }
 
@@ -24,7 +25,52 @@ nav {
     margin-bottom: 2em;
 }
 
+.tabbed {
+    padding-left: 20px;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.box{
+    box-model: border-box;
+    border: 5px solid transparent;
+    background-clip:padding-box;
+}
+
+.border_padding {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#review_padding{
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.border_colour {
+    background-color: rgb(232,232,238);
+    border-radius: 10px;
+}
+
+.title_padding {
+    padding-bottom: 25px;
+}
+
+#googlePlayButton {
+    display: block;
+    margin:auto;
+    width:12%;
+    padding-top: 75px;
+    padding-bottom: 20px;
+}
+
 footer {
+    display: block;
     padding: 1.5em 0;
     background: #302a2b;
     text-align: center;
@@ -46,5 +92,9 @@ footer {
     .contactForm {
         order: 99;
     }
-}
 
+    #googlePlayButton {
+        width:30%;
+        padding-top: 50px;
+    }
+}
