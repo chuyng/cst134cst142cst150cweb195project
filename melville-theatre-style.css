@@ -17,6 +17,7 @@ img {
 }
 
 nav {
+    margin-top: 0;
     margin-bottom: 2em;
 }
 
@@ -29,15 +30,31 @@ nav {
 }
 
 footer {
+    display: block;
     padding: 1.5em 0;
     background: #302a2b;
     text-align: center;
     color: #acacac;
     font-family: "PT Sans Narrow", Helvetica, Arial, sans-serif;
+    margin-top: 2em;
+}
+
+#googleMap {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 @media (max-width:575px) {
     .content {
         order: 99;
+    }
+
+    .contactForm {
+        order: 99;
+    }
+
+    #googlePlayButton {
+        width:30%;
+        padding-top: 50px;
     }
 }

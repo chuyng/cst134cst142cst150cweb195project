@@ -6,13 +6,13 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="melville-theatre-style.css" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
           integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
           crossorigin="anonymous">
+
+    <link rel="stylesheet" href="melville-theatre-style.css" />
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -67,13 +67,150 @@
 
     <div class="container">
         <div class="row">
-            <div class="content col-sm-8">
-                <h2 class="title_padding">FAQ</h2>
-                <p>
+            <div class="content col-sm-12">
+                <h2>Frequently Asked Questions</h2>
 
-                </p>
+                <div id="accordion">
+
+                    <div class="card">
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                            <div class="card-header">
+                                <p>1. What has changed from before?</p>
+                            </div>
+                        </a>
+                        <div id="collapseOne" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                Pretty much everything. The Melville Theatre converted from a film theatre to a digital
+                                cinema in April of 2011 and installed a new digital projector, a new surround sound
+                                system and a new screen.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                            <div class="card-header">
+                                <p>2. Do you show every movie in 3D?</p>
+                            </div>
+                        </a>
+                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                Not all movies are made in 3D. Therefore, the Melville Theatre plays both regular and
+                                3D movies. If a movie is available in 3D, that's the version that we will play.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a class="card-link" data-toggle="collapse" href="#collapseThree">
+                            <div class="card-header">
+                                <p>3. Do you still play movies on film?</p>
+                            </div>
+                        </a>
+                        <div id="collapseThree" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                No. The 35mm film projector and associated equipment were removed when we installed the digital
+                                cinema equipment. Everything that we play is digital.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a class="card-link" data-toggle="collapse" href="#collapseFour">
+                            <div class="card-header">
+                                <p>4. What is the advantage of digital cinema over film?</p>
+                            </div>
+                        </a>
+                        <div id="collapseFour" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                A perfect picture and sound reproduction, every time. Movies on film can become worn,
+                                degrade and get scratched and dusty over time. This doesn't happen with digital cinema.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <a class="card-link" data-toggle="collapse" href="#collapseFive">
+                            <div class="card-header">
+                                <p>5. Do I have to wear special glasses for the 3D movies?</p>
+                            </div>
+                        </a>
+                        <div id="collapseFive" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                Yes, you have to wear the Real D 3D glasses. They look like sunglasses, and if you
+                                already wear glasses they are made to fit over your regular glasses easily. You will
+                                receive a new pair of Real D 3D glasses every time you attend a 3D movie at the Melville
+                                Theatre.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a class="card-link" data-toggle="collapse" href="#collapseSix">
+                            <div class="card-header">
+                                <p>6. What are the admission prices for the digital cinema?</p>
+                            </div>
+                        </a>
+                        <div id="collapseSix" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                The regular admission prices are $7 for children aged 12 and under, and $9 for everyone else, plus
+                                the 3D surcharge discussed in the next question.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a class="card-link" data-toggle="collapse" href="#collapseSeven">
+                            <div class="card-header">
+                                <p>7. Is there an extra charge for 3D movies?</p>
+                            </div>
+                        </a>
+                        <div id="collapseSeven" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                Yes, there is a $3.00 surcharge on all tickets for 3D movies. This is NOT a charge for the 3D
+                                glasses; you still have to pay the $3.00 surcharge even if you bring your own 3D glasses. The
+                                surcharge is simply because 3D movies are more expensive to bring to the Melville Theatre. The
+                                surcharge applies only to 3D movies; you don't pay the surcharge if the movie is not a 3D movie.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a class="card-link" data-toggle="collapse" href="#collapseEight">
+                            <div class="card-header">
+                                <p>8. Why don't you send out flyers any more?</p>
+                            </div>
+                        </a>
+                        <div id="collapseEight" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                To bring you the newest movies as quickly as we can, it is not possible to book them
+                                sufficiently far in advance to print a flyer.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a class="card-link" data-toggle="collapse" href="#collapseNine">
+                            <div class="card-header">
+                                <p>9. How can I find out what's playing at the Melville Theatre?</p>
+                            </div>
+                        </a>
+                        <div id="collapseNine" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                There are several ways to find out what's playing. The easiest way is to check the
+                                <a href="now-playing.html">Now Playing</a> link on our website,
+                                <a href="index.html">www.melvilletheatre.com</a>. You can even sign up for our Mailing List and
+                                receive anautomatic email from us every time we have a new movie booked. You can also phone our
+                                24-hour answering machine at (306)728-4448, or check the ad on the front cover of the Parkland
+                                Bargain Hunter.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
-
 
         </div>
     </div>
