@@ -33,8 +33,18 @@ footer {
     margin-top: 2em;
 }
 
+#googleMap {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
 @media (max-width:575px) {
     .content {
         order: 99;
     }
+
+    .contactForm {
+        order: 99;
+    }
 }
+
