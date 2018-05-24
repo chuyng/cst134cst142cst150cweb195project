@@ -21,6 +21,10 @@ nav {
     margin-bottom: 2em;
 }
 
+.detailsButton {
+    display: none;
+}
+
 .poster {
     margin-bottom: 2em;
 }
@@ -83,7 +87,7 @@ footer {
     margin-top: 20px;
 }
 
-@media (max-width:575px) {
+@media (max-width:767px) {
     .content {
         order: 99;
     }
@@ -92,4 +96,21 @@ footer {
         width:30%;
         padding-top: 50px;
     }
+
+    .detailsButton {
+        display: block;
+    }
+
+    .md-show {
+        visibility: hidden;
+    }
+
+    .modal-backdrop {
+        display: none;
+    }
+
+    /*.modal-open {*/
+        /*display: none;*/
+    /*}*/
+
 }
