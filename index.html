@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+    Author:     Chris Nguyen (cst134), Dylan Sies (cst142), Nigel Winter (cst150)
+    Filename:   index.html
+    Course:     CWEB 195
+    Instructor: Michael Grzesina
+    Assignment: Final Project
+    Date:       2018-05-24
+    Purpose:    Home page for Melville Theatre
+-->
 <head>
     <meta charset="UTF-8">
     <title>Melville Theatre, Saskatchewan</title>
@@ -27,11 +36,12 @@
             crossorigin="anonymous"></script>
 
 </head>
-<body>
 
-    <div class="jumbotron text-right">
-        <h1>Melville Theatre</h1>
+<body>
+    <div id="title_bar">
+       <h1 class="title_text">Melville Theatre</h1>
     </div>
+
 
     <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
 
@@ -68,9 +78,10 @@
         </div>
     </nav>
 
+
     <div class="container">
         <div class="row">
-            <div class="content col-sm-8">
+            <div class="content col-md-8">
                 <h2 class="title_padding">About Us</h2>
                 <p>The Melville Theatre is located in Saskatchewan's smallest city. Melville has a population of just
                     under 5000 people. To learn more about Melville and Melville businesses, tourism, and community
@@ -108,8 +119,9 @@
                 </p>
             </div>
 
-            <div class="nowPlaying col-sm-4">
-                <h2>Now Playing</h2>
+
+            <div class="nowPlaying col-md-4">
+                <h2 id="titleCarousel">Now Playing</h2>
                 <div id="posterCarousel" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">

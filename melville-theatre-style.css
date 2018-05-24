@@ -1,14 +1,36 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+@import url('https://fonts.googleapis.com/css?family=Yellowtail');
 
-/*Css for adding the banner image*/
-.jumbotron {
+body {
+    width: 100%;
+}
+
+.title_text {
+    font-size: 8em;
+    padding-left: 25px;
+    padding-top: 15px;
+    font-family: 'Yellowtail',Helvetica, Arial, sans-serif;
+    color: silver;
+    text-shadow: 5px 5px #302a2b ;
+}
+
+#title_bar {
     margin-bottom: 0;
-    /* TODO find sleek image */
-    background-image: url("images/titlebanner.png");
-    font-family: Helvetica, Arial, sans-serif;
-    color: white;
+    background: url("images/titlebanner.jpg") no-repeat;
+    background-size: cover;
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+}
+
+.mobilePoster {
+    display: none;
+}
+
+a, a:hover {
+    color: #e3133c;
 }
 
 img {
@@ -19,6 +41,19 @@ img {
 nav {
     margin-top: 0;
     margin-bottom: 2em;
+}
+
+.btn {
+    background-color: #e3133c;
+    border-color: #87142b;
+}
+
+.btn:hover {
+    background-color: #ff133d;
+}
+
+#posterCarousel {
+    padding-bottom: 2em;
 }
 
 .detailsButton {
@@ -37,7 +72,7 @@ nav {
     padding-left: 20px;
 }
 
-.col-centered{
+.col-centered {
     float: none;
     margin: 0 auto;
 }
@@ -45,17 +80,18 @@ nav {
 .box{
     box-model: border-box;
     border: 5px solid transparent;
-    background-clip:padding-box;
+    background-clip: padding-box;
 }
 
 .border_padding {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 10px 25px 10px 25px;
 }
 
-#review_padding{
+#titleCarousel {
+    padding-bottom: 25px;
+}
+
+#review_padding {
     padding-left: 45px;
     padding-right: 45px;
 }
@@ -71,8 +107,8 @@ nav {
 
 #googlePlayButton {
     display: block;
-    margin:auto;
-    width:12%;
+    margin: auto;
+    width: 12%;
     padding-top: 75px;
     padding-bottom: 20px;
 }
@@ -87,13 +123,16 @@ footer {
     margin-top: 20px;
 }
 
+/*//////////////////////////////////////////////////////*/
+/*---------------   For Mobile Devices   ---------------*/
+/*//////////////////////////////////////////////////////*/
 @media (max-width:767px) {
     .content {
         order: 99;
     }
 
     #googlePlayButton {
-        width:30%;
+        width: 30%;
         padding-top: 50px;
     }
 
@@ -109,8 +148,15 @@ footer {
         display: none;
     }
 
-    /*.modal-open {*/
-        /*display: none;*/
-    /*}*/
+    .title_text{
+        font-size: 4em;
+    }
 
+    .nonMobilePoster {
+        display: none;
+    }
+
+    .mobilePoster {
+        display: block;
+    }
 }

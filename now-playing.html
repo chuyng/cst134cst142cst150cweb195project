@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+    Author:     Chris Nguyen (cst134), Dylan Sies (cst142), Nigel Winter (cst150)
+    Filename:   now-playing.html
+    Course:     CWEB 195
+    Instructor: Michael Grzesina
+    Assignment: Final Project
+    Date:       2018-05-24
+    Purpose:    Now Playing page for Melville Theatre
+-->
 <head>
     <meta charset="UTF-8">
     <title>Now Playing</title>
@@ -26,18 +35,13 @@
             integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
             crossorigin="anonymous"></script>
 
-    <style>
-        .jumbotron {
-            margin-bottom: 0;
-        }
-    </style>
-
 </head>
-<body>
 
-    <div class="jumbotron text-right">
-        <h1>Melville Theatre</h1>
+<body>
+    <div id="title_bar">
+        <h1 class="title_text">Melville Theatre</h1>
     </div>
+
 
     <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
 
@@ -76,18 +80,23 @@
         <h2 class="title_padding">Now Playing</h2>
         <div class="row">
 
-            <!--LIFE OF THE PARTY-->
+            <!----------------------->
+            <!-- LIFE OF THE PARTY -->
+            <!----------------------->
             <div id="movie1" class="poster content col-lg-3 col-md-4 col-6">
                 <div class="card">
-                    <a href="#myModal1" class="md-trigger" data-toggle="modal" >
-                        <img src="images/lifeoftheparty.jpg" class="center-block img-responsive
-                    wp-post-image" alt="Life of the Party" /></a>
+                    <a href="#myModal1" class="md-trigger nonMobilePoster" data-toggle="modal" >
+                        <img src="images/lifeoftheparty.jpg" class="center-block img-responsive" alt="Life of the Party"
+                             role="button" /></a>
+                    <img src="images/lifeoftheparty.jpg" class="center-block img-responsive mobilePoster" alt="Life of the Party"
+                         role="button" />
                     <div class="card-body">
                         <h5 class="card-title">Life of the Party</h5>
                         <p class="card-text">PG</p>
                     </div>
                 </div>
 
+                <!-- Accordion -->
                 <div class="card detailsButton">
                     <a class="card-link" data-toggle="collapse" href="#collapse1">
                         <div class="card-header">
@@ -105,7 +114,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- ACCORDIAN END -->
 
                 <!-- The Modal -->
                 <div class="modal md-show" id="myModal1">
@@ -141,18 +149,23 @@
             </div>
 
 
-            <!--SUPER TROOPERS 2-->
+            <!---------------------->
+            <!-- SUPER TROOPERS 2 -->
+            <!---------------------->
             <div id="movie2" class="poster content col-lg-3 col-md-4 col-6">
                 <div class="card">
-                    <a href="#" class="md-trigger" data-toggle="modal" data-target="#myModal2">
-                        <img src="images/supertroopers2.jpg" class="center-block img-responsive
-                    wp-post-image" alt="Super Troopers 2" /></a>
+                    <a href="#" class="md-trigger nonMobilePoster" data-toggle="modal" data-target="#myModal2">
+                        <img src="images/supertroopers2.jpg" class="center-block img-responsive" alt="Super Troopers 2"
+                             role="button" /></a>
+                    <img src="images/supertroopers2.jpg" class="center-block img-responsive mobilePoster" alt="Super Troopers 2"
+                         role="button" />
                     <div class="card-body">
                         <h5 class="card-title">Super Troopers 2</h5>
                         <p class="card-text">14A</p>
                     </div>
                 </div>
 
+                <!-- Accordion -->
                 <div class="card detailsButton">
                     <a class="card-link" data-toggle="collapse" href="#collapse2">
                         <div class="card-header">
@@ -170,7 +183,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- ACCORDIAN END -->
 
                 <!-- The Modal -->
                 <div class="modal md-show" id="myModal2">
@@ -206,18 +218,24 @@
             </div>
 
 
-            <!--DEADPOOL 2-->
+            <!---------------->
+            <!-- DEADPOOL 2 -->
+            <!---------------->
             <div id="movie3" class="poster content col-lg-3 col-md-4 col-6">
                 <div class="card">
-                    <a href="#" class="md-trigger" data-toggle="modal" data-target="#myModal3">
-                        <img src="images/deadpool23.jpg" class="center-block img-responsive
-                    wp-post-image" alt="Deadpool 2" /></a>
+                    <a href="#" class="md-trigger nonMobilePoster" data-toggle="modal" data-target="#myModal3">
+                        <img src="images/deadpool23.jpg" class="center-block img-responsive" alt="Deadpool 2"
+                             role="button" /></a>
+                    <img src="images/deadpool23.jpg" class="center-block img-responsive mobilePoster" alt="Deadpool 2"
+                         role="button" />
+
                     <div class="card-body">
                         <h5 class="card-title">Deadpool 2</h5>
                         <p class="card-text">18A</p>
                     </div>
                 </div>
 
+                <!-- Accordion -->
                 <div class="card detailsButton">
                     <a class="card-link" data-toggle="collapse" href="#collapse3">
                         <div class="card-header">
@@ -240,7 +258,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- ACCORDIAN END -->
 
                 <!-- The Modal -->
                 <div class="modal md-show" id="myModal3">
@@ -281,18 +298,24 @@
             </div>
 
 
-            <!--AVENGERS:  INFINITY WAR 3D-->
+            <!-------------------------------->
+            <!-- AVENGERS:  INFINITY WAR 3D -->
+            <!-------------------------------->
             <div id="movie4" class="poster content col-lg-3 col-md-4 col-6">
                 <div class="card">
-                    <a href="#" class="md-trigger" data-toggle="modal" data-target="#myModal4">
-                        <img src="images/inifinitywar.jpg" class="center-block img-responsive
-                    wp-post-image" alt="Avengers: Infinity War 3D" /></a>
+                    <a href="#" class="md-trigger nonMobilePoster" data-toggle="modal" data-target="#myModal4">
+                        <img src="images/inifinitywar.jpg" class="center-block img-responsive"
+                             alt="Avengers: Infinity War 3D" role="button" /></a>
+                    <img src="images/inifinitywar.jpg" class="center-block img-responsive mobilePoster"
+                         alt="Avengers: Infinity War 3D" role="button" />
+
                     <div class="card-body">
                         <h5 class="card-title">Avengers: Infinity War</h5>
                         <p class="card-text">PG</p>
                     </div>
                 </div>
 
+                <!-- Accordion -->
                 <div class="card detailsButton">
                     <a class="card-link" data-toggle="collapse" href="#collapse4">
                         <div class="card-header">
@@ -311,7 +334,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- ACCORDIAN END -->
 
                 <!-- The Modal -->
                 <div class="modal md-show" id="myModal4">
@@ -348,18 +370,24 @@
             </div>
 
 
-            <!--OCEAN'S 8-->
+            <!--------------->
+            <!-- OCEAN'S 8 -->
+            <!--------------->
             <div id="movie5" class="poster content col-lg-3 col-md-4 col-6">
                 <div class="card">
-                    <a href="#" class="md-trigger" data-toggle="modal" data-target="#myModal5">
-                        <img src="images/oceans8.jpg" class="center-block img-responsive
-                    wp-post-image" alt="Ocean's 8" /></a>
+                    <a href="#" class="md-trigger nonMobilePoster" data-toggle="modal" data-target="#myModal5">
+                        <img src="images/oceans8.jpg" class="center-block img-responsive" alt="Ocean's 8"
+                             role="button" /></a>
+                    <img src="images/oceans8.jpg" class="center-block img-responsive mobilePoster" alt="Ocean's 8"
+                         role="button" />
+
                     <div class="card-body">
                         <h5 class="card-title">Ocean's 8</h5>
                         <p class="card-text">PG</p>
                     </div>
                 </div>
 
+                <!-- Accordion -->
                 <div class="card detailsButton">
                     <a class="card-link" data-toggle="collapse" href="#collapse5">
                         <div class="card-header">
@@ -377,7 +405,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- ACCORDIAN END -->
 
                 <!-- The Modal -->
                 <div class="modal md-show" id="myModal5">
@@ -413,18 +440,24 @@
             </div>
 
 
-            <!--BOOK CLUB-->
+            <!--------------->
+            <!-- BOOK CLUB -->
+            <!--------------->
             <div id="movie6" class="poster content col-lg-3 col-md-4 col-6">
                 <div class="card">
-                    <a href="#" class="md-trigger" data-toggle="modal" data-target="#myModal6">
-                    <img src="images/bookclub.jpg" class="center-block img-responsive
-                    wp-post-image" alt="Book Club" /></a>
+                    <a href="#" class="md-trigger nonMobilePoster" data-toggle="modal" data-target="#myModal6">
+                        <img src="images/bookclub.jpg" class="center-block img-responsive" alt="Book Club"
+                             role="button" /></a>
+                    <img src="images/bookclub.jpg" class="center-block img-responsive mobilePoster" alt="Book Club"
+                         role="button" />
+
                     <div class="card-body">
                         <h5 class="card-title">Book Club</h5>
                         <p class="card-text">PG</p>
                     </div>
                 </div>
 
+                <!-- Accordion-->
                 <div class="card detailsButton">
                     <a class="card-link" data-toggle="collapse" href="#collapse6">
                         <div class="card-header">
@@ -442,7 +475,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- ACCORDIAN END -->
 
                 <!-- The Modal -->
                 <div class="modal md-show" id="myModal6">
@@ -477,83 +509,7 @@
                 </div>
             </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!--<div class="poster content col-lg-3 col-md-4 col-6">-->
-                <!--<div class="card" style="width: 100%">-->
-                    <!--<img class="card-img-top" src="images/lifeoftheparty.jpg" alt="Life of the Party">-->
-                    <!--<div class="card-body">-->
-                        <!--<h5 class="card-title">Life of the Party</h5>-->
-                        <!--<p class="card-text">PG</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-
-            <!--<div class="poster content col-lg-3 col-md-4 col-6">-->
-                <!--<div class="card" style="width: 100%">-->
-                    <!--<img class="card-img-top" src="images/supertroopers2.jpg" alt="Super Troopers 2">-->
-                    <!--<div class="card-body">-->
-                        <!--<h5 class="card-title">Super Troopers 2</h5>-->
-                        <!--<p class="card-text">14A</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-
-            <!--<div class="poster content col-lg-3 col-md-4 col-6">-->
-                <!--<div class="card" style="width: 100%">-->
-                    <!--<img class="card-img-top" src="images/deadpool22.jpg" alt="Deadpool 2">-->
-                    <!--<div class="card-body">-->
-                        <!--<h5 class="card-title">Deadpool 2</h5>-->
-                        <!--<p class="card-text">18A</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-
-            <!--<div class="poster content col-lg-3 col-md-4 col-6">-->
-                <!--<div class="card" style="width: 100%">-->
-                    <!--<img class="card-img-top" src="images/inifinitywar.jpg" alt="Avengers Infinity War 3D">-->
-                    <!--<div class="card-body">-->
-                        <!--<h5 class="card-title">Avengers: Infinity War</h5>-->
-                        <!--<p class="card-text">PG</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-
-            <!--<div class="poster content col-lg-3 col-md-4 col-6">-->
-                <!--<div class="card" style="width: 100%">-->
-                    <!--<img class="card-img-top" src="images/oceans8.jpg" alt="Ocean's 8">-->
-                    <!--<div class="card-body">-->
-                        <!--<h5 class="card-title">Ocean's 8</h5>-->
-                        <!--<p class="card-text">PG-13</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-
-            <!--<div class="poster content col-lg-3 col-md-4 col-6">-->
-                <!--<div class="card" style="width: 100%">-->
-                    <!--<img class="card-img-top" src="images/bookclub.jpg" alt="Book Club">-->
-                    <!--<div class="card-body">-->
-                        <!--<h5 class="card-title">Book Club</h5>-->
-                        <!--<p class="card-text">PG</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
         </div>
-
     </div>
 
     <footer>
