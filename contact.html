@@ -21,19 +21,9 @@
           integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
           crossorigin="anonymous">
 
+    <link rel="stylesheet" href="jform.css"/>
+
     <link rel="stylesheet" href="melville-theatre-style.css"/>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-            crossorigin="anonymous"></script>
 
 </head>
 
@@ -79,64 +69,120 @@
     <div class="container">
         <div class="row">
             <h2>Contact Us</h2>
+        </div>
 
-            <div class="row">
+        <div class="row">
 
-                <div class="content col-12 col-md-8">
+            <div class="content col-md-8">
 
-                    <p><strong>Address:</strong><br/>223 third Avenue West <br/> Melville, SK <br/> S0A 2P0</p>
-                    <p><strong>Phone:</strong> (306)-728-4448</p>
-                    <p><strong>Email:</strong> theatre@melvilletheatre.com</p>
+                <p><strong>Address:</strong><br/>223 third Avenue West <br/> Melville, SK <br/> S0A 2P0</p>
+                <p><strong>Phone:</strong> (306)-728-4448</p>
+                <p><strong>Email:</strong> theatre@melvilletheatre.com</p>
 
+                <div id="googleMap" style="height:400px;width:100%;"></div>
+                <script>
+                    function myMap() {
+                        var myCenter = new google.maps.LatLng(50.929133,-102.809333);
+                        var mapProp = {center:myCenter, zoom:17, scrollwheel:true, draggable:true, mapTypeId:google.maps.MapTypeId.ROADMAP};
+                        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                        var marker = new google.maps.Marker({position:myCenter});
+                    }
+                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqOaS1mRnH2OqqtwV1fzwFFZeto1_trnc&callback=myMap"></script>
 
-                    <div id="googleMap" style="height:400px;width:100%;"></div>
-                    <script>
-                        function myMap() {
-                            var myCenter = new google.maps.LatLng(50.929133,-102.809333);
-                            var mapProp = {center:myCenter, zoom:17, scrollwheel:true, draggable:true, mapTypeId:google.maps.MapTypeId.ROADMAP};
-                            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-                            var marker = new google.maps.Marker({position:myCenter});
-                        }
-                    </script>
-                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqOaS1mRnH2OqqtwV1fzwFFZeto1_trnc&callback=myMap"></script>
+            </div>
 
-                </div>
+            <div class="col-md-4 contactForm">
 
-                <div class="col-12 col-md-4 contactForm">
+                <p>If you have any questions or comments please fill out this form and we will get back to you as soon
+                    as we can.</p>
 
-                    <p>If you have any questions or comments please fill out this form and we will get back to you as soon
-                        as we can.</p>
-
-                    <form action="#">
-                        <div class="form-group">
-                            <label for="email">Name:</label>
-                            <input type="text" class="form-control" id="text">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email address:</label>
-                            <input type="email" class="form-control" id="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="pwd">Phone:</label>
-                            <input type="text" class="form-control" id="pwd">
-                        </div>
-                        <div class="form-group">
-                            <label for="Notes">Notes:</label>
-                            <textarea class="form-control" rows="3" id="Notes" name="Notes"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-
-                </div>
+                <form action="#" id="contactForm" method="get">
+                    <div class="form-group">
+                        <label for="name">*Name:</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">*Email address:</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="text" class="form-control" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="Notes">Notes:</label>
+                        <textarea class="form-control" rows="3" id="Notes" name="Notes"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
 
             </div>
 
         </div>
+
     </div>
+
 
     <footer>
         <span id="footerAddress">223 Third Avenue West  Melville SK</span>
     </footer>
+
+
+    <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+
+    <script src="jquery.validate.min.js" type="text/javascript"></script>
+
+    <script>
+        jQuery.validator.addMethod("nameChars", function(value, elem) {
+            return this.optional(elem) || /^[A-Za-z0-9]+$/.test(value);
+
+        }, "A name can only contain letters or numbers");
+
+        jQuery.validator.addMethod("cellularDevice", function(value, elem) {
+            return this.optional(elem) || /^[0-9\-\(\)\s]+$/.test(value);
+
+        }, "Phone number can only contain numbers and '-'s");
+
+        $(function() {
+            $("#contactForm").validate({
+                rules: {
+                    name: {
+                        required: true,
+                        nameChars: true
+                    },
+                    email: {
+                        required: true,
+                        email : true
+                    },
+                    phone: {
+                        cellularDevice: true
+                    }
+                },
+                messages : {
+                    name: {
+                        required: "Your name is required",
+                        nameChars: "That is not a valid name"
+                    },
+                    email: {
+                        required: "Your email is required",
+                        email: "That is not a valid email"
+                    },
+                    phone: {
+                        phone: "That is an invalid phone number"
+                    }
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>

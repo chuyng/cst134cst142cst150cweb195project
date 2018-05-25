@@ -8,21 +8,21 @@ body {
 }
 
 .title_text {
-    font-size: 8em;
+    font-size: 4em;
     padding-left: 25px;
     padding-top: 15px;
     font-family: 'Yellowtail',Helvetica, Arial, sans-serif;
     color: silver;
-    text-shadow: 5px 5px #302a2b ;
+    text-shadow: 4px 4px #302a2b;
 }
 
 #title_bar {
     margin-bottom: 0;
     background: url("images/titlebanner.jpg") no-repeat;
     background-size: cover;
-    height: 100%;
     max-width: 100%;
     width: 100%;
+    height: 100%;
 }
 
 .mobilePoster {
@@ -33,6 +33,11 @@ a, a:hover {
     color: #e3133c;
 }
 
+a.us, a.us:hover {
+    color: black;
+    text-decoration: none;
+}
+
 img {
     max-width: 100%;
     width: 100%;
@@ -41,6 +46,10 @@ img {
 nav {
     margin-top: 0;
     margin-bottom: 2em;
+}
+
+.card {
+    display: block;
 }
 
 .btn {
@@ -123,6 +132,7 @@ footer {
     margin-top: 20px;
 }
 
+
 /*//////////////////////////////////////////////////////*/
 /*---------------   For Mobile Devices   ---------------*/
 /*//////////////////////////////////////////////////////*/
@@ -149,7 +159,8 @@ footer {
     }
 
     .title_text{
-        font-size: 4em;
+        font-size: 2em;
+        text-shadow: 2px 2px #302a2b;
     }
 
     .nonMobilePoster {
@@ -158,5 +169,22 @@ footer {
 
     .mobilePoster {
         display: block;
+    }
+}
+
+
+/*//////////////////////////////////////////////////////*/
+/*-------------   For Internet Explorer   --------------*/
+/*//////////////////////////////////////////////////////*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .modal-poster {
+        max-width: 70%;
+        width: 70%;
+        height: 100%;
+    }
+
+    #title_bar {
+        height: 100%;
+
     }
 }
