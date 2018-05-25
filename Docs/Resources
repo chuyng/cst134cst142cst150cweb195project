@@ -1,0 +1,12 @@
+We did most of our research on https://www.w3schools.com/. We used this website for information on CSS and how to
+implement Bootstrap 4. We also used https://stackoverflow.com/ looking for solution from people who have had the same
+problems as us.
+
+ We used the Bootstrap 4 framework so that our website would transition between desktop and mobile views easily.
+ Bootstrap also has many features that are very easy to implement and make the website look very nice, and are easy
+ to interact with, we used the Google Maps API to show the location of the website so that a user will be able
+ to find its location very easily, and jQuery validation for client-side validation inside of our forms.
+
+All images for movie posters where retrieved from: https://www.imdb.com/.
+We also included a link to the movie theaters app: https://play.google.com/store/apps/details?id=com.melvilletheatre.theatreapp&hl=en
+Image used for the banner: http://www.queensu.ca/filmandmedia/sites/webpublish.queensu.ca.fmwww/files/headers/15-0379-Film-and-Media-web-banner.jpg.jpeg
