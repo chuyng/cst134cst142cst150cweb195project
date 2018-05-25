@@ -185,6 +185,10 @@ footer {
 
     #title_bar {
         height: 100%;
+    }
 
+    .banner {
+        height: 100vh;
+        display: flex;
     }
 }
